@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'node --version'
             }
-        },
+        }
         stage('Deploy') {
             steps {
                 cat ./info   
