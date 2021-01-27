@@ -7,8 +7,8 @@ pipeline {
             steps {
                 sh 'node --version'
             }
-        }
-        stage('Use') {
+        },
+        stage('Deploy') {
             steps {
                 cat ./info   
             }
