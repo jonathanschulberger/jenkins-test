@@ -6,11 +6,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                cat ./info   
+                sh 'cat info'
             }
         }
     }
